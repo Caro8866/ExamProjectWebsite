@@ -9,7 +9,6 @@
     color: var(--color-navy);
     text-align: center;
     border-bottom: 3px solid var(--color-navy);
-    border-top: 3px solid var(--color-navy);
     padding:1rem;
 }
 .PPproductimg{ 
@@ -63,7 +62,10 @@
 }
 
 /** desktop view: Product top and bottom sections**/
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 700px){
+    .PPtitle{
+        /**/
+    }
     .PPproduct{
         display: grid;
         grid-template-columns: 15% 30% 40% 15%;
@@ -150,9 +152,22 @@
 .borderB{
     padding: 0.4rem;
 }
+@media only screen and (max-width: 699px){ 
+    .PP{
+        margin: 3rem;
+        border: 2px solid var(--color-navy);
+    }
 
+}
+@media only screen and (max-width: 449px){ 
+    .PP{
+        margin:0;
+        border: none;
+    }
+
+}
 /*related product section for desktop*/
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 600px){
     .PPrelated{
         display: grid;
         grid-template-columns: 15% 1fr 1fr 1fr 15%;
@@ -184,7 +199,6 @@
     overflow-x:auto;
     scroll-behavior: smooth;
     display:flex;
-    justify-content: space-a;
   }
   
 .relatedWrapper::-webkit-scrollbar {
@@ -209,7 +223,7 @@
   background-color:transparent;
   font-family: var(--font-primary);
   color: var(--color-accent-red-600);
-  padding: 0;
+  padding:0;
 }
 
 .pre-btn {
