@@ -334,3 +334,38 @@ a:active {
 }
 
 /*Contact form  */
+
+.containerform {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.formstyle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+label {
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+input {
+  color: var(--color-navy);
+  background-color: var(--color-primary-offwhite);
+  border: 2px solid var(--color-navy);
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+}
+
+textarea {
+  color: var(--color-navy);
+  background-color: var(--color-primary-offwhite);
+  border: 2px dashed var(--color-navy);
+  padding: 0.3rem;
+}

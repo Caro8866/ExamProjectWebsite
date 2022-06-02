@@ -10,127 +10,77 @@
     <meta name="robots" content="noindex,nofollow" />
   </head>
   <body>
-    <header class="NavBar">
-      <a id="home_link_mobile" href="index.html"> Le Caviste</a>
-
-      <!-- 1. Burger Menu Nav / 4. nav -->
-      <span class="cart"></span>
-
-      <div class="burger_menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-
-      <ul class="list_menu_burger">
-        <li class="first_menu_item">
-          <a class="menu_name1" href="">The wines</a>
-
-          <!-- <div class="submenu">
-            <a href="">White</a><a href="">Red</a><a href="">Rosé</a
-            ><a href="">Sparkling</a><a href="">Cremant</a
-            ><a href="">Champagne</a><a href="">View all</a>
-          </div> -->
-        </li>
-        <li><a class="menu_name" href="">News & Events</a></li>
-        <li><a class="menu_name" href="">About us</a></li>
-        <li><a class="menu_name" href="">Contact</a></li>
-        <li class="flags">
-          <div class="flag_dk"></div>
-          <div class="flag_en"></div>
-        </li>
-      </ul>
+    <header>
     </header>
     <main>
-      <!-- 2. top section including logo and bg img-->
-      <section class="HeroTop">
-        <h1 class="logotype">Le Caviste</h1>
-        <a href="#Wines" id="downArrowBtn">hi</a>
-      </section>
-
-      <nav class="sticky_nav_menu">
-        <a class="home_link" href="index.html"> Le Caviste</a>
-
-        <ul class="list_menu_sticky">
-          <li><a href="">The wines</a></li>
-          <li><a href="">News & Events</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-
-      <section id="TopQuote">
-        <!-- 3. Quote -->
-        <h3 class="quote">life is too short to drink bad wine</h3>
-      </section>
-
-      <div class="contentWrapper">
-        <!-- Quote Section -->
-        <section id="TopQuote">
-          <h3>life is too short to drink bad wine</h3>
-        </section>
-        <!-- Wine Categories Section -->
-        <section id="WineCategories">
-          <h2>The Wines</h2>
-
-          <div class="cube"></div>
-          <!-- Carosel of categories - MOBILE -->
-          <!-- Grid Overview of categories - DESKTOP -->
-        </section>
-
-        <!-- News & Events Section -->
-        <section id="News&Events">
-          <h2>News & Events</h2>
-
-          <!-- New Wines Section -->
-          <section id="newWines">
-            <h3>New Wines</h3>
-            <!-- New wines go here -->
-          </section>
-          <!-- Events Section -->
-          <section id="Events">
-            <h3>Events</h3>
-            <!-- Events sections -->
-          </section>
-        </section>
-
         <!-- Contacts sections -->
         <!-- CONNECT TO NETLIFY -->
         <section id="Contact">
-          <h2>contact us</h2>
-          <h3>BLA BLA BLA BLA BLA</h>
-            <div class="fc24">
-              <a href="https://www.facebook.com/lecavistecph">
-                <img src="Assets/Vectorfacebook.svg" alt="facebook logo" />
-              </a>
-              <a href="#">
-                <img src="Assets/Vectormail.svg" alt="mail logo" />
-              </a>
-              <a href="https://www.facebook.com/lecavistecph">
-                <img src="Assets/Vectorinstagram.svg" alt="instagram logo" />
-              </a>
-            </div>
-            <h3>or</h3>
-            <div class="formcontainer">
+          <h2>CONTACT</h2>
+          <h3>BLA BLA BLA BLA BLA</h3>
+          <div class="fc24">
+            <a href="https://www.facebook.com/lecavistecph">
+              <img src="Assets/Vectorfacebook.svg" alt="facebook logo" />
+            </a>
+            <a href="#">
+              <img src="Assets/Vectormail.svg" alt="mail logo" />
+            </a>
+            <a href="https://www.facebook.com/lecavistecph">
+              <img src="Assets/Vectorinstagram.svg" alt="instagram logo" />
+            </a>
+          </div>
+          <h3 class="">or</h3>
+          <div class="containerform">
+            <form class="formstyle">
               <div>
-                <form>
-                  <label>Full name</label><br>
-                  <input type="text" name="fullname"><br>
-                  <label>Telephone number</label><br>
-                  <input type="tel" name="telephone"><br>
-                  <label>Email address</label><br>
-                  <input type="email" name="email"><br>
-                </form>
+                <label for="fullname">Full name</label><br />
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname1"
+                  placeholder="Name"
+                />
               </div>
-              <div></div>
-            </div>
+              <div>
+                <label for="telephone">Telephone number</label><br />
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone1"
+                  placeholder="XXXXX"
+                />
+              </div>
+              <div>
+                <label for="email">Email adress</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email1"
+                  placeholder="xxx@xxx.xxx"
+                />
+              </div>
+            </form>
+            <form class="formstyle">
+              <div>
+                <label for="message">Your message</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bojour!"
+                  rows="6"
+                  cols="50"
+                ></textarea
+                ><br />
+              </div>
+            </form>
+            <input type="submit" value="SUBMIT MESSAGE" />
+          </div>
           <!-- Contact form -->
         </section>
       </div>
     </main>
 
     <footer>
-      <!-- Social media links, address, contact info....-->
     </footer>
     <script src="main.js"></script>
   </body>
