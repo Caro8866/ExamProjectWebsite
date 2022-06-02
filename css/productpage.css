@@ -16,6 +16,8 @@
     text-align: center;
     border-bottom: 3px solid var(--color-navy); 
     padding:1rem; 
+    background-image: url(/Assets/background-try.png);
+    background-size: cover;
 }
 .PPproductimg img{
     object-fit: cover;  
@@ -75,6 +77,9 @@
         border-top: 2px solid var(--color-navy);
         border-left: 2px solid var(--color-navy);
         border-right: 2px dashed var(--color-navy);
+        background-image: url(/Assets/background-try.png);
+        background-size: cover;
+
     }
     .PPtextRight{
         border-top:2px solid var(--color-navy);
@@ -143,7 +148,9 @@
     font-weight: 700;
 }
 .relatedActions a:hover{
-    color: var(--color-accent-red);
+    color:#f9f3ed;
+    background-color: var(--color-navy);
+    transition: all 0.2s ease;
 }
 .borderA{
     border-right: 1px dashed var(--color-navy);
