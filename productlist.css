@@ -178,3 +178,9 @@
   color: var(--color-accent-red);
   transition: color 0.3s;
 }
+
+@media only screen and (max-width: 377px) {
+  #headerSec h1 {
+    font-size: 100%;
+  }
+}
