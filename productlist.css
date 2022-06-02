@@ -15,7 +15,7 @@
 
 /* Breadcrumb Navigation */
 .breadcrumbNav {
-  margin: 0;
+  margin-bottom: 1rem;
   text-transform: capitalize;
 }
 
@@ -45,7 +45,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 1.7rem;
+  font-size: 1.835rem;
 }
 
 .topBar {
@@ -179,8 +179,14 @@
   transition: color 0.3s;
 }
 
-@media only screen and (max-width: 377px) {
+@media only screen and (min-width: 600px) {
   #headerSec h1 {
-    font-size: 100%;
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #headerSec h1 {
+    font-size: 4.375rem;
   }
 }
