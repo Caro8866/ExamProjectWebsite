@@ -15,7 +15,7 @@
 .breadcrumbNav a {
   display: inline;
   text-decoration: none;
-  color: var(--color-blue);
+  color: var(--color-navy);
 }
 
 .breadcrumbNav li + li:before {
@@ -27,13 +27,15 @@
   font-weight: 800;
 }
 
-#contentHeaderSec {
+#headerSection {
   color: var(--color-navy);
-  border: 3px solid var(--color-navy);
+  border-top: 3px solid var(--color-navy);
+  border-right: 3px solid var(--color-navy);
+  border-left: 3px solid var(--color-navy);
+  border-bottom: 1.5px solid var(--color-navy);
   padding: 1rem;
 }
-
-#headerSec h1 {
+#headerSection h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -45,9 +47,9 @@
   flex-direction: column;
   align-items: flex-end;
   padding: 0.5rem;
-  border-top: 3px var(--color-blue) solid;
-  border-right: 3px var(--color-blue) solid;
-  border-left: 3px var(--color-blue) solid;
+  border-top: 3px var(--color-navy) solid;
+  border-right: 3px var(--color-navy) solid;
+  border-left: 3px var(--color-navy) solid;
 }
 
 .sortByDropDown {
@@ -64,10 +66,10 @@
 
 /* ----- PRODUCT CARD -----*/
 .productCard {
-  border-top: 3px var(--color-blue) solid;
-  border-right: 1.5px var(--color-blue) solid;
-  border-left: 1.5px var(--color-blue) solid;
-  border-bottom: 1.5px var(--color-blue) solid;
+  border-top: 3px var(--color-navy) solid;
+  border-right: 1.5px var(--color-navy) solid;
+  border-left: 1.5px var(--color-navy) solid;
+  border-bottom: 1.5px var(--color-navy) solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,9 +208,9 @@
 
   .productCard:nth-of-type(1),
   .productCard:nth-of-type(n + 3) {
-    border-left: 3px var(--color-blue) solid;
+    border-left: 3px var(--color-navy) solid;
   }
   .productCard:nth-of-type(3n) {
-    border-right: 3px var(--color-blue) solid;
+    border-right: 3px var(--color-navy) solid;
   }
 }
