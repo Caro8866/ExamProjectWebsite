@@ -26,7 +26,7 @@ function showWine(wine) {
   // availiability
   document.querySelector(
     ".PPavailability"
-  ).textContent = `${wine.availibility} bottles left`;
+  ).textContent = `${wine.availibility} bottles left`; //need to do in wp
 
   // description
   document.querySelector(".PPdescription").textContent = wine.description;
@@ -36,8 +36,10 @@ function showWine(wine) {
 
   // vineyard
   document.querySelector(".PPvineyard").textContent = wine.wineyard;
+
   // grapes
   document.querySelector(".PPgrapes").textContent = wine.grapes;
+
   // notes
   document.querySelector(".PPnotes").textContent = wine.notes;
 }
