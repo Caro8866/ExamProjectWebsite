@@ -248,3 +248,20 @@ a:hover {
 a:active {
   color: var(--color-white);
 }
+
+/* Events Section */
+#Events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.event {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(226, 88, 37, 0.2);
+  padding: 2rem 0rem;
+  color: var(--color-navy);
+  border: solid 3px var(--color-accent-red);
+}
