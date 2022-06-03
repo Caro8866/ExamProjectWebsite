@@ -44,7 +44,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.contentWrapper {
+  margin: 0 6rem;
+}
 /* REGULAR CSS STYLING BELOW */
 
 /* --- CSS FONT VARIABLES*/
@@ -149,10 +151,7 @@ img {
 }
 
 /********************** sticky menu ****************/
-.sticky_nav_menu {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+#sticky_nav_menu {
   position: sticky;
   top: 13rem;
 }
