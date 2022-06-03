@@ -67,6 +67,7 @@ h3 {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 #PPminus,
 #PPplus,
