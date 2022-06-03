@@ -166,10 +166,10 @@ a {
   flex-direction: column;
   gap: 0.8rem;
 }
-.list_menu_sticky li:hover {
+/* .list_menu_sticky li:hover {
   transform: scale(1.2);
   transition: all 400ms ease-in-out;
-}
+} */
 
 /******************* burger menu ****************/
 .burger_menu div {
