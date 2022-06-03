@@ -27,9 +27,16 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-secondary);
   margin-bottom: 1rem;
+}
+
+h4 {
+  text-align: center;
+  color: var(--color-navy);
+  margin-top: 1rem;
 }
 
 li {
@@ -603,4 +610,18 @@ input.sub :hover {
     letter-spacing: 1rem;
     border: 0;
   }
+}
+
+/* Wine section */
+
+.containerwines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.cws {
+  display: flex;
+  flex-direction: column;
 }
