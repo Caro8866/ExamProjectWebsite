@@ -260,8 +260,27 @@ a:active {
 .event {
   width: 100%;
   text-align: center;
+  justify-content: center;
   background-color: rgba(226, 88, 37, 0.2);
-  padding: 2rem 0rem;
+  padding: 2rem;
   color: var(--color-navy);
   border: solid 3px var(--color-accent-red);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.event01 {
+  background-image: url(../Assets/RedWineEvent.png);
+  filter: opacity(0.8);
+}
+
+.event02 {
+  background-image: url(../Assets/WinePairingEvent.png);
+}
+
+.transparentRectangle {
+  background-color: rgba(209, 36, 45, 0.6);
+  width: auto;
+  height: 100%;
+  padding: 2rem;
+  border: var(--color-accent-red) 2px solid;
 }
