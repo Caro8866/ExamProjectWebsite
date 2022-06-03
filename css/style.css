@@ -45,8 +45,26 @@ img {
   height: auto;
 }
 .contentWrapper {
-  margin: 0 6rem;
+  margin: 0;
 }
+
+/*** media queries for main structure ***/
+@media only screen and (min-width: 600px) {
+  .contentWrapper {
+    margin: 0 6rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contentWrapper {
+    margin: 0 8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contentWrapper {
+    margin: 0 12rem;
+  }
+}
+
 /* REGULAR CSS STYLING BELOW */
 
 /* --- CSS FONT VARIABLES*/
@@ -152,7 +170,7 @@ img {
 
 /********************** sticky menu ****************/
 #sticky_nav_menu {
-  position: sticky;
+  position: fixed;
   top: 13rem;
 }
 .list_menu_sticky {
@@ -365,6 +383,7 @@ a:active {
   height: 2rem;
   background-size: 2rem;
   background-repeat: no-repeat;
+  justify-self: right;
 }
 .close_quote {
   background-image: url(../Assets/“close-quote.svg);
@@ -372,6 +391,8 @@ a:active {
   height: 2rem;
   background-size: 2rem;
   background-repeat: no-repeat;
+  grid-column: 3;
+  grid-row: 3;
 }
 #TopQuote {
   font-family: var(--font-secondary);
@@ -380,8 +401,12 @@ a:active {
   border-bottom: 3px var(--color-navy) solid;
   margin-top: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 15% 1fr 15%;
   grid-template-rows: repeat(3, 1fr);
+}
+.quote {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /* FOOTER */
