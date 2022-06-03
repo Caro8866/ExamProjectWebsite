@@ -65,9 +65,7 @@
 
 /** desktop view: Product top and bottom sections**/
 @media only screen and (min-width: 700px){
-    .PPtitle{
-        /**/
-    }
+
     .PPproduct{
         display: grid;
         grid-template-columns: 15% 30% 40% 15%;
