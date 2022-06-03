@@ -208,14 +208,14 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
-.menu_name1::after {
+/* .menu_name1::after {
   content: "+";
   height: auto;
   width: auto;
   margin: 0 1.7rem;
-}
+} */
 
 li {
   height: 100%;
@@ -303,9 +303,9 @@ li {
     gap: 0.9rem;
     z-index: 2;
   } */
-  .submenu {
+  /* .submenu {
     padding-top: 0.9rem;
-  }
+  } */
   .flag_dk {
     background-image: url(../Assets/circle-flags_dkcircle_flag_dk.svg);
     background-size: 1.8rem;
@@ -417,7 +417,9 @@ iframe {
   row-gap: 1rem;
   padding: 0 2rem;
 }
-
+.footer_p {
+  font-weight: 700;
+}
 .footercontainer2 {
   padding-top: 2rem;
   text-align: center;
