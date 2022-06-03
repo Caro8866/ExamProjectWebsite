@@ -28,7 +28,7 @@
 
       <ul class="list_menu_burger">
         <li class="first_menu_item">
-          <a class="menu_name1" href="">The wines</a>
+          <a class="menu_name1" href="index.html#WineCategories">The wines</a>
 
           <!-- <div class="submenu">
             <a href="">White</a><a href="">Red</a><a href="">Rosé</a
@@ -36,9 +36,9 @@
             ><a href="">Champagne</a><a href="">View all</a>
           </div> -->
         </li>
-        <li><a class="menu_name" href="">News & Events</a></li>
+        <li><a class="menu_name" href="index.html#NewsandEvents">News & Events</a></li>
         <li><a class="menu_name" href="">About us</a></li>
-        <li><a class="menu_name" href="">Contact</a></li>
+        <li><a class="menu_name" href="index.html#Contact">Contact</a></li>
         <li class="flags">
           <div class="flag_dk"></div>
           <div class="flag_en"></div>
@@ -48,13 +48,25 @@
     <main class="PP">
       <nav  id="sticky_nav_menu">
         <ul class="list_menu_sticky">
-          <li><a href="">The wines</a></li>
+          <li><a href="index.html#WineCategories">The wines</a></li>
           <li><a href="">News & Events</a></li>
           <li><a href="">About us</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
         </ul>
       </nav>
-      <h1 class="PPtitle">JOY SAUVIGNON</h1>
+      <div class="contentWrapper">
+      <nav class="breadcrumb_menu">
+        <ol class="breadcrumbNav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html#WineCategories">Wines</a></li>
+          <li class="categoryName">champagne</li>
+          <li>Joy Sauvignon</li>
+        </ol>
+      </nav>
+      <div id="headerSection">
+        <h1 class="PPtitle">JOY SAUVIGNON</h1>
+      </div>
+     
       <section class="PPproduct">
         <div class="PPproductimg">
           <img
@@ -65,15 +77,18 @@
         <div class="PPtextRight">
           <p class="PPyear">2020</p>
           <h2 class="PPname">Cotes Catalanes - Carignan Vieilles Vignes</h2>
-          <p class="PPprice">120 dkk</p>
+          <p class="PPprice">120 DKK</p>
           <!-- Quantity selector idk how to do-->
           <div class="PPquantity">
-            <button id="PPminus">-</button>
+            <div class="quantity_selector">
+              <button id="PPminus">-</button>
             <span id="PPnumberPlace">0</span>
             <button id="PPplus">+</button>
+            </div>
             <button id="PPadd">Add to cart</button>
-            <p class="PPavailability">23 bottles left</p>
+          
           </div>
+          <p class="PPavailability">23 bottles left</p>
 
           <h3>Description</h3>
           <p class="PPdescription">
@@ -159,7 +174,7 @@
             <div class="fc11">
               <p>Would you like a first personr experience?</p>
               <p>
-                Come nad <a>visit our bistro</a> to experience the wines and a
+                Come and <a>visit our bistro</a> to experience the wines and a
                 wide range of french cusine.
               </p>
             </div>
@@ -233,6 +248,7 @@
         <p>CVR:384943202</p>
       </div>
     </footer>
+  </div>
     <script src="main.js"></script>
     <script src="productpage1.js"></script>
   </body>

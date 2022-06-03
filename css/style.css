@@ -403,7 +403,7 @@ iframe {
   grid-template-columns: 1fr;
 }
 .footercontainer1 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -551,6 +551,9 @@ input.sub :hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+#formLeft div {
+  margin-bottom: 1rem;
 }
 
 /* Title sections */
