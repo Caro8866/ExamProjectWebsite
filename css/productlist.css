@@ -50,10 +50,12 @@
   align-items: flex-end;
   padding: 0.5rem;
   border-top: 3px var(--color-navy) solid;
+  border-bottom: 3px var(--color-navy) solid;
 }
 
 .sortByDropDown {
   padding-right: 1rem;
+  color: var(--color-accent-red);
 }
 
 /* ----- PRODUCTS SECTION -----*/
@@ -66,8 +68,6 @@
 
 /* ----- PRODUCT CARD -----*/
 .productCard {
-  border-top: 3px var(--color-navy) solid;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,9 +75,9 @@
   font-weight: 400;
 }
 
-.productCard:last-child {
+/* .productCard:last-child {
   border-bottom: 3px solid var(--color-navy);
-}
+} */
 .topProductSec {
   display: flex;
   flex-direction: column;
@@ -96,6 +96,7 @@
   letter-spacing: 0.2rem;
   color: var(--color-accent-red);
   font-family: var(--font-primary);
+  text-align: center;
 }
 
 .priceSec {
@@ -114,6 +115,9 @@
   text-align: center;
   padding: 0.5rem 0rem;
 }
+.productPrice {
+  color: var(--color-navy);
+}
 
 .productActions {
   width: 100%;
@@ -121,6 +125,7 @@
   flex-direction: row;
   justify-content: space-around;
   border-top: 2px dashed var(--color-navy);
+  border-bottom: 3px solid var(--color-navy);
 }
 .productActions > a {
   width: 100%;
@@ -185,7 +190,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
   #headerSection h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   #products {
     display: grid;
@@ -215,4 +220,44 @@
   .productCard:nth-of-type(3n) {
     border-right: 3px var(--color-navy) solid;
   }
+}
+
+/******* media queries with grid **********/
+
+@media only screen and (min-width: 601px) {
+  .breadcrumb_menu {
+    grid-row: 1;
+    grid-column: 2;
+    border: 3px solid var(--color-navy);
+  }
+  .topBar {
+    grid-row: 2;
+    grid-column: 2;
+    border: 3px solid var(--color-navy);
+    border-top: none;
+  }
+  #headerSection {
+    grid-row: 3;
+    grid-column: 2;
+    border: 3px solid var(--color-navy);
+    border-top: none;
+  }
+  .topProductSec {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  .priceSec {
+    grid-row: 5;
+    grid-column: 2;
+  }
+  .productActions {
+    grid-row: 6;
+    grid-column: 2;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

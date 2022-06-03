@@ -184,7 +184,7 @@ h2.PPname {
   transition: all 0.2s ease;
 }
 .borderA {
-  border-right: 1px dashed var(--color-navy);
+  border-right: 2px dashed var(--color-navy);
   padding: 0.4rem;
 }
 .borderB {
