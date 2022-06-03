@@ -331,15 +331,16 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--color-navy);
 }
 
 a:link {
   color: var(--color-navy);
 }
 
-a:visited {
+/* a:visited {
   color: var(--color-primary-offwhite-600);
-}
+} */
 a:hover {
   color: var(--color-accent-red);
 }
@@ -598,8 +599,14 @@ input.sub :hover {
     justify-content: space-between;
   }
 
-  .footercontainer3 a {
+  .footercontainer3 a,
+  .underlinedlink {
     text-decoration: underline var(--color-navy);
+  }
+
+  .footercontainer3 a:hover,
+  .underlinedlink:hover {
+    text-decoration: underline var(--color-accent-red);
   }
 
   .justifiedtext {
@@ -689,4 +696,12 @@ input.sub :hover {
   .contentWrapper {
     grid-template-columns: 20% 60% 20%;
   }
+}
+
+.containerwines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
 }
