@@ -341,6 +341,7 @@ a:link {
 /* a:visited {
   color: var(--color-primary-offwhite-600);
 } */
+
 a:hover {
   color: var(--color-accent-red);
 }
@@ -564,7 +565,7 @@ input.sub :hover {
   border-top: 3px solid var(--color-navy);
 }
 
-/* Media query form and footer */
+/* Media query form, footer wine display*/
 
 @media only screen and (min-width: 601px) {
   .footercontainer {
@@ -699,9 +700,14 @@ input.sub :hover {
 }
 
 .containerwines {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3fr;
+}
+
+.cws {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: flex-end;
 }
