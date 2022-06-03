@@ -10,7 +10,7 @@
     <meta name="robots" content="noindex,nofollow" />
   </head>
   <body>
-    <main>
+   
       <header class="NavBar">
         <a id="home_link_mobile" href="index.html"> Le Caviste</a>
   
@@ -49,6 +49,7 @@
           <a href="#Wines" id="downArrowBtn">hi</a>
         </section>
   
+        <div class="contentWrapper">
         <nav id="sticky_nav_menu">
           <a class="home_link" href="index.html"> Le Caviste</a>
   
@@ -66,7 +67,6 @@
         </nav>
 
         
-        <div class="contentWrapper">
         <section id="TopQuote">
           <!-- 3. Quote -->
           <div class="open_quote"></div>
@@ -79,23 +79,23 @@
 
           <!-- Wine Categories Section -->
           <section id="WineCategories">
-            <h2>The Wines</h2>
+            <h2 class="titlesection">THE WINES</h2>
             <!-- Carosel of categories - MOBILE -->
             <!-- Grid Overview of categories - DESKTOP -->
           </section>
   
           <!-- News & Events Section -->
-          <section id="News&Events">
-            <h2>News & Events</h2>
+          <section id="NewsandEvents">
+            <h2 class="titlesection">NEWS & EVENTS</h2>
   
             <!-- New Wines Section -->
             <section id="newWines">
-              <h3>New Wines</h3>
+              <h3 class="titlesection">NEW WINES</h3>
               <!-- New wines go here -->
             </section>
             <!-- Events Section -->
             <section id="Events">
-              <h3>Events</h3>
+              <h3 class="titlesection">EVENTS</h3>
               <!-- Events sections -->
             </section>
           </section>
@@ -118,51 +118,55 @@
             </div>
             <h2 class="or">or</h2>
             <div class="containerform1">
-              <form class="formstyle f1">
+              <form class="formstyle-f1">
                 <div>
-                  <label for="fullname">Full name</label><br />
-                  <input
-                    type="text"
-                    id="fullname"
-                    name="fullname1"
-                    placeholder="Name"
-                  />
+                  <div>
+                    <label for="fullname">Full name</label><br />
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname1"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div>
+                    <label for="telephone">Telephone number</label><br />
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone1"
+                      placeholder="XXXXX"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email adress</label><br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email1"
+                      placeholder="xxx@xxx.xxx"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label for="telephone">Telephone number</label><br />
-                  <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone1"
-                    placeholder="XXXXX"
-                  />
-                </div>
-                <div>
-                  <label for="email">Email adress</label><br />
-                  <input
-                    type="email"
-                    id="email"
-                    name="email1"
-                    placeholder="xxx@xxx.xxx"
-                  />
-                </div>
-              </form>
-              <form class="formstyle f2">
                 <div>
                   <label for="message">Your message</label><br />
                   <textarea
                     id="message"
                     name="message"
                     placeholder="Bojour!"
-                    rows="11"
-                    cols="50"
+                  
                   ></textarea
                   ><br />
                 </div>
+                <div class="containersub">
+                  <input class="sub" type="submit" value="SUBMIT MESSAGE" />
+                </div>
               </form>
-              <div class="containersub">
-                <input class="sub" type="submit" value="SUBMIT MESSAGE" />
-              </div>
+              <!-- <form class="formstyle-f2">
+                 rows="11"
+                    cols="40"
+              </form> -->
+             
             </div>
           </article>
         </section>
