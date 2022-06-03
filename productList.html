@@ -44,6 +44,7 @@
     </header>
 
     <main>
+      <<<<<<< HEAD
       <nav id="sticky_nav_menu">
         <ul class="list_menu_sticky">
           <li><a href="index.html#WineCategories">The wines</a></li>
@@ -52,6 +53,18 @@
           <li><a href="index.html#Contact">Contact</a></li>
         </ul>
       </nav>
+      =======
+      <div id="headerSec">
+        <nav class="sticky_nav_menu">
+          <ul class="list_menu_sticky">
+            <li><a href="">The wines</a></li>
+            <li><a href="">News & Events</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      >>>>>>> JavaScript-CT
 
       <div class="contentWrapper">
         <nav class="breadcrumb_menu">
@@ -68,8 +81,26 @@
           <div class="sortByDropDown">Sort by</div>
         </div>
         <div id="products">
-          <!-- <template id="productCardReg-Template"> -->
-          <section class="productCard">
+          <template id="productCardTemplate" class="productCard">
+            <div class="topProductSec">
+              <img
+                src="Assets/bottle.png"
+                alt="Wine Bottle Image"
+                class="productImage"
+              />
+              <h3 class="productName">joy sauvignon</h3>
+            </div>
+
+            <div class="priceSec">
+              <p class="productPrice">DKK 120;-</p>
+            </div>
+
+            <div class="productActions">
+              <a class="viewBtn btn" href="productPage.html">view</a>
+              <a class="buyBtn btn" href="">buy</a>
+            </div>
+          </template>
+          <!-- <section class="productCard">
             <div class="topProductSec">
               <img
                 src="Assets/bottle.png"
@@ -201,29 +232,10 @@
               <a class="viewBtn btn" href="productPage.html">view</a>
               <a class="buyBtn btn" href="">buy</a>
             </div>
-          </section>
-          <section class="productCard">
-            <div class="topProductSec">
-              <img
-                src="Assets/bottle.png"
-                alt="Wine Bottle Image"
-                class="productImage"
-              />
-              <h3 class="productName">joy sauvignon</h3>
-            </div>
-
-            <div class="priceSec">
-              <p class="productPrice">DKK 120;-</p>
-            </div>
-
-            <div class="productActions">
-              <a class="viewBtn btn" href="productPage.html">view</a>
-              <a class="buyBtn btn" href="">buy</a>
-            </div>
-          </section>
+          </section> -->
 
           <!-- Sold out card -->
-
+          <!-- 
           <section class="productCard SoldOut">
             <div class="topProductSec">
               <img
@@ -242,10 +254,10 @@
               <a class="viewBtn btn" href="productPage.html">view</a>
               <a class="buyBtn btn" href="">buy</a>
             </div>
-          </section>
+          </section> -->
 
           <!-- Discounted Card -->
-          <section class="productCard Discount">
+          <!-- <section class="productCard Discount">
             <div class="discountAmount">-10%</div>
             <div class="topProductSec">
               <img
@@ -265,7 +277,7 @@
               <a class="viewBtn btn" href="productPage.html">view</a>
               <a class="buyBtn btn" href="">buy</a>
             </div>
-          </section>
+          </section> -->
         </div>
         <div id="paginationSec">
           <a href="0">&laquo;</a>
@@ -360,6 +372,8 @@
         <p>CVR:384943202</p>
       </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/productList.js"></script>
   </body>
 </html>
