@@ -713,5 +713,17 @@ input.sub :hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: flex-end;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* Carousel */
+
+/* .item {
+  background-color: pink;
+} */
+
+.cws1 {
+  height: 30rem;
 }
