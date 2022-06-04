@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Caviste</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/homepage.css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/themes/splide-default.min.css">   
     <meta name="robots" content="noindex,nofollow" />
   </head>
   <body>
@@ -101,7 +102,46 @@
               </a>
             </div>
             <!-- Carosel of categories - MOBILE -->
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <a href="#" class="cws white">
+                     <img src="Assets/wines/alsace-sylvaner.png" alt="bottle">
+                     <h4>WHITE</h4>
+                    </a>
+                 </li>
+                  <li class="splide__slide">
+                    <a href="#" class="cws red">
+                      <img src="Assets/wines/pommard-cru.png" alt="bottle">
+                      <h4>RED</h4>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <a href="#" class="cws rose">
+                      <img src="Assets/wines/bennezon-rose.png" alt="bottle">
+                      <h4>ROSÉ</h4>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <a href="#" class="cws cremant">
+                      <img src="Assets/wines/joy-brut.png" alt="bottle">
+                      <h4>CRÉMANT</h4>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <a href="#" class="cws champagne">
+                      <img src="Assets/wines/bennezon-expression.png" alt="bottle">
+                      <h4>CHAMPAGNE</h4>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
           </section>
+         
+
+          
   
           <!-- News & Events Section -->
           <section id="News&Events">
@@ -277,5 +317,9 @@
     </footer>
   </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+   <!--  <script>
+      new Splide( '.splide' ).mount();
+    </script> -->
   </body>
 </html>

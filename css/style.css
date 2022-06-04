@@ -699,10 +699,14 @@ input.sub :hover {
   }
 }
 
-.containerwines {
-  display: flex;
-  flex-direction: row;
-  column-gap: 3fr;
+@media only screen and (min-width: 1800px) {
+  .containerwines {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10rem 2rem;
+  }
 }
 
 .cws {
