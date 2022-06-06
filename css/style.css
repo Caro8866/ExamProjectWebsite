@@ -15,7 +15,7 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* body has to have a height for the sticky menu to work with the overflow */
   font-family: var(--font-secondary);
   background-color: #f9f3ed;
   position: relative;
@@ -87,7 +87,7 @@ img {
 /**************----- LANDING PAGE -----****************/
 
 .HeroTop {
-  height: 65vh;
+  height: 90vh;
   background-image: url(../Assets/bistrofront.jpg);
   background-position: center;
   display: flex;
@@ -158,7 +158,7 @@ img {
 #sticky_nav_menu {
   position: sticky;
   top: 13rem;
-  grid-row: 1;
+  grid-row: 1/3;
   grid-column: 1;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
@@ -167,6 +167,12 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+.list_menu_sticky li {
+  width: 100%;
+}
+.submenu {
+  display: none;
 }
 /* .list_menu_sticky li:hover {
   transform: scale(1.2);
@@ -192,12 +198,7 @@ img {
 .line3 {
   transition: transform 400ms ease-in-out;
 }
-/* .submenu {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  z-index: 2;
-} */
+
 .menu_name {
   font-weight: 700;
   font-size: 1.2rem;
@@ -297,15 +298,7 @@ li {
   .list_menu_burger li:last-child {
     border-bottom: none;
   }
-  /* .first_menu_item:hover .submenu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    z-index: 2;
-  } */
-  /* .submenu {
-    padding-top: 0.9rem;
-  } */
+
   .flag_dk {
     background-image: url(../Assets/circle-flags_dkcircle_flag_dk.svg);
     background-size: 1.8rem;
@@ -541,8 +534,9 @@ textarea {
 .sub {
   padding: 0.3rem;
   margin: 2rem 0;
+  cursor: pointer;
 }
-input.sub :hover {
+input.sub:hover {
   background-color: var(--color-navy);
   color: var(--color-primary-offwhite);
 }
@@ -570,6 +564,13 @@ input.sub :hover {
 /* Media query form and footer */
 
 @media only screen and (min-width: 601px) {
+  li.submenu_access:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    z-index: 2;
+    margin: 0.6rem;
+  }
   .footercontainer {
     border-left: 3px solid var(--color-navy);
     border-right: 3px solid var(--color-navy);
@@ -672,6 +673,7 @@ input.sub :hover {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
+    margin-top: 2rem;
   }
 }
 

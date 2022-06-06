@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/productlist.css" />
     <meta name="robots" content="noindex,nofollow" />
   </head>
-  <body>
+  <body id="product_list">
     <header class="NavBar">
       <a id="home_link_mobile" href="index.html"> Le Caviste</a>
       <!-- 1. Burger Menu Nav / 4. nav -->
@@ -44,23 +44,31 @@
     </header>
 
     <main>
-      <nav id="sticky_nav_menu">
-        <a class="home_link" href="index.html"> Le Caviste</a>
-
-        <ul class="list_menu_sticky">
-          <li><a href="index.html#WineCategories">The wines</a></li>
-          <li><a href="index.html#NewsandEvents">News & Events</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="index.html#Contact">Contact</a></li>
-          <li class="flags">
-            <div class="flag_dk"></div>
-
-            <div class="flag_en"></div>
-          </li>
-        </ul>
-      </nav>
-
       <div class="contentWrapper">
+        <nav id="sticky_nav_menu">
+          <a class="home_link" href="index.html"> Le Caviste</a>
+
+          <ul class="list_menu_sticky">
+            <li class="submenu_access">
+              <a class="submenu_access" href="index.html#WineCategories"
+                >The wines</a
+              >
+              <div class="submenu">
+                <a href="">White</a><a href="">Red</a><a href="">Rosé</a
+                ><a href="">Sparkling</a> <a href="">Champagne</a
+                ><a href="">View all</a>
+              </div>
+            </li>
+            <li><a href="index.html#NewsandEvents">News & Events</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li class="flags">
+              <div class="flag_dk"></div>
+
+              <div class="flag_en"></div>
+            </li>
+          </ul>
+        </nav>
         <nav class="breadcrumb_menu">
           <ol class="breadcrumbNav">
             <li><a href="index.html">home</a></li>
@@ -94,7 +102,8 @@
               <a class="buyBtn btn" href="">buy</a>
             </div>
           </template>
-          <!-- <section class="productCard">
+        </div>
+        <!-- <section class="productCard">
             <div class="topProductSec">
               <img
                 src="Assets/bottle.png"
@@ -228,8 +237,8 @@
             </div>
           </section> -->
 
-          <!-- Sold out card -->
-          <!-- 
+        <!-- Sold out card -->
+        <!-- 
           <section class="productCard SoldOut">
             <div class="topProductSec">
               <img
@@ -250,8 +259,8 @@
             </div>
           </section> -->
 
-          <!-- Discounted Card -->
-          <!-- <section class="productCard Discount">
+        <!-- Discounted Card -->
+        <!-- <section class="productCard Discount">
             <div class="discountAmount">-10%</div>
             <div class="topProductSec">
               <img
@@ -272,7 +281,6 @@
               <a class="buyBtn btn" href="">buy</a>
             </div>
           </section> -->
-        </div>
       </div>
     </main>
     <div id="paginationSec">

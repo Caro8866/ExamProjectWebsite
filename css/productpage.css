@@ -190,12 +190,12 @@ h2.PPname {
 .borderB {
   padding: 0.4rem;
 }
-@media only screen and (max-width: 699px) {
+/* @media only screen and (max-width: 699px) {
   .PP {
     margin: 3rem;
     border: 2px solid var(--color-navy);
   }
-}
+} */
 @media only screen and (max-width: 449px) {
   .PP {
     margin: 0;

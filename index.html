@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/homepage.css" />
     <meta name="robots" content="noindex,nofollow" />
   </head>
-  <body>
+  <body id="landing_page">
    
       <header class="NavBar">
         <a id="home_link_mobile" href="index.html"> Le Caviste</a>
@@ -24,15 +24,7 @@
         </div>
   
         <ul class="list_menu_burger">
-          <li class="first_menu_item">
-            <a class="menu_name1" href="index.html#WineCategories">The wines</a>
-  
-            <!-- <div class="submenu">
-              <a href="">White</a><a href="">Red</a><a href="">Rosé</a
-              ><a href="">Sparkling</a><a href="">Cremant</a
-              ><a href="">Champagne</a><a href="">View all</a>
-            </div> -->
-          </li>
+          <li class="first_menu_item"><a class="menu_name1" href="index.html#WineCategories">The wines<a></li>
           <li><a class="menu_name" href="index.html#NewsandEvents">News & Events</a></li>
           <li><a class="menu_name" href="">About us</a></li>
           <li><a class="menu_name" href="index.html#Contact">Contact</a></li>
@@ -54,7 +46,11 @@
           <a class="home_link" href="index.html"> Le Caviste</a>
   
           <ul class="list_menu_sticky">
-            <li><a href="index.html#WineCategories">The wines</a></li>
+            <li class="submenu_access"><a class="submenu_access" href="index.html#WineCategories">The wines</a>  <div class="submenu">
+              <a href="">White</a><a href="">Red</a><a href="">Rosé</a
+              ><a href="">Sparkling</a>
+              <a href="">Champagne</a><a href="">View all</a>
+            </div></li>
             <li><a href="index.html#NewsandEvents">News & Events</a></li>
             <li><a href="">About us</a></li>
             <li><a href="index.html#Contact">Contact</a></li>
@@ -64,6 +60,7 @@
               <div class="flag_en"></div>
             </li>
           </ul>
+         
         </nav>
 
         
@@ -81,6 +78,7 @@
           <section id="WineCategories">
             <h2 class="titlesection">THE WINES</h2>
             <div class="containerwines">
+              <!-- wine?_embed&categories=3 -->
               <a href="productList.html" class="cws">
                 <img src="Assets/bottle.png" alt="bottle">
                 <h4>WHITE</h4>
