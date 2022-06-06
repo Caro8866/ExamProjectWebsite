@@ -118,26 +118,26 @@ h2.PPname {
   }
   .PPproductimg {
     grid-column: 1;
-    border-top: 2px solid var(--color-navy);
-    border-left: 2px solid var(--color-navy);
-    border-right: 2px dashed var(--color-navy);
+    border-top: 3px solid var(--color-navy);
+    border-left: 3px solid var(--color-navy);
+    border-right: 3px dashed var(--color-navy);
     background-image: url(/Assets/background-try.png);
     background-size: cover;
   }
   .PPtextRight {
-    border-top: 2px solid var(--color-navy);
-    border-right: 2px solid var(--color-navy);
+    border-top: 3px solid var(--color-navy);
+    border-right: 3px solid var(--color-navy);
   }
   .PPtextLeft {
     grid-column: 1;
     grid-row: 2/3;
-    border-left: 2px solid var(--color-navy);
-    border-right: 2px dashed var(--color-navy);
+    border-left: 3px solid var(--color-navy);
+    border-right: 3px dashed var(--color-navy);
   }
   .PPchart {
     grid-column: 2;
     grid-row: 2/3;
-    border-right: 2px solid var(--color-navy);
+    border-right: 3px solid var(--color-navy);
     padding-left: 1rem;
   }
   #PPadd {
@@ -180,7 +180,7 @@ h2.PPname {
 .relatedPrice {
   text-align: center;
   padding: 1rem;
-  border-top: 2px dashed var(--color-navy);
+  border-top: 3px dashed var(--color-navy);
   font-weight: 500;
   font-size: 15px;
 }
@@ -189,7 +189,7 @@ h2.PPname {
   grid-template-columns: 1fr 1fr;
   padding: 0.2rem;
   text-align: center;
-  border-top: 2px dashed var(--color-navy);
+  border-top: 3px dashed var(--color-navy);
   font-size: 14px;
 }
 .relatedActions a {
@@ -202,7 +202,7 @@ h2.PPname {
   transition: all 0.2s ease;
 }
 .borderA {
-  border-right: 2px dashed var(--color-navy);
+  border-right: 3px dashed var(--color-navy);
   padding: 0.4rem;
 }
 .borderB {
