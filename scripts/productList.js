@@ -34,6 +34,9 @@ function displayData(wines) {
       .querySelector(".viewBtn")
       .setAttribute("href", `productPage.html?_id=${wine.id}`);
 
+    clone.querySelector(".productImage").src =
+      wine._embedded["wp:featuredmedia"][0].source_url;
+
     // GRAB PARENT
     const parent = document.querySelector(".products_grid");
 
