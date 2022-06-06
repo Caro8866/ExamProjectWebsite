@@ -757,6 +757,9 @@ input.sub:hover {
   /* align-content: center; */
   align-items: center;
 }
+.textwine {
+  padding-top: 1rem;
+}
 
 /* .textwine {
   transform: rotateX(90deg);
@@ -784,4 +787,28 @@ input.sub:hover {
   position: absolute;
   top: 50%;
   left: 95%;
+}
+
+@media only screen and (min-width: 900) {
+  .PPproduct {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column: 2;
+  }
+  .PPproductimg {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .PPtextRight {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .PPtextLeft {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .PPchart {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }

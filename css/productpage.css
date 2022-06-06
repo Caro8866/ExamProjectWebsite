@@ -117,32 +117,34 @@ h2.PPname {
     gap: 1rem;
   }
   .PPproductimg {
-    grid-column: 1;
-    border-top: 3px solid var(--color-navy);
-    border-left: 3px solid var(--color-navy);
-    border-right: 3px dashed var(--color-navy);
+    grid-column: 1/3;
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
     background-image: url(/Assets/background-try.png);
     background-size: cover;
   }
   .PPtextRight {
-    border-top: 3px solid var(--color-navy);
-    border-right: 3px solid var(--color-navy);
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
+    grid-column: 1/3;
+    grid-row: 2;
   }
   .PPtextLeft {
-    grid-column: 1;
-    grid-row: 2/3;
-    border-left: 3px solid var(--color-navy);
-    border-right: 3px dashed var(--color-navy);
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
+    grid-column: 1/3;
+    grid-row: 3;
   }
   .PPchart {
     grid-column: 2;
     grid-row: 2/3;
-    border-right: 3px solid var(--color-navy);
+    border: 3px solid var(--color-navy);
+
     padding-left: 1rem;
+    grid-column: 1/3;
+    grid-row: 4;
   }
-  #PPadd {
-    padding: 0rem 1.3rem;
-  }
+
   .breadcrumb_menu {
     border: 3px solid var(--color-navy);
     border-bottom: none;
@@ -240,7 +242,7 @@ h2.PPname {
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 0;
-    grid-column: 1/3;
+    grid-column: 1/4;
     border: none;
     position: relative;
     text-align: left;
