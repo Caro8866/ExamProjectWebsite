@@ -173,6 +173,7 @@ img {
   font-family: var(--font-logo);
   font-size: 1.7rem;
   flex-grow: 2;
+  font-weight: 800;
 }
 
 .logotype,
