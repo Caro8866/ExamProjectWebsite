@@ -780,6 +780,7 @@ input.sub:hover {
   justify-content: space-around;
   border-top: 3px dashed var(--color-navy);
   font-weight: 400;
+  padding: 0.5rem 0;
 }
 
 .priceSec > * {
@@ -871,9 +872,9 @@ input.sub:hover {
   .new_wine_card {
     margin-top: 0;
   }
-  .productImage {
+  /* .productImage {
     height: 300px;
-  }
+  } */
   .new_wine1 {
     border-right: 3px solid var(--color-navy);
   }

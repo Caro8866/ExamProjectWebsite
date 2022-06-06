@@ -90,7 +90,7 @@
 
 .productImage {
   height: auto;
-  width: 30%;
+  width: auto;
 }
 
 .productName {
@@ -109,6 +109,7 @@
   justify-content: space-around;
   border-top: 3px dashed var(--color-navy);
   font-weight: 400;
+  padding: 0.5rem 0;
 }
 
 .priceSec > * {
