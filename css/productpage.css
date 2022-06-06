@@ -12,7 +12,8 @@ p {
 .PPchart h3 {
   text-align: center;
 }
-.PPtextLeft h4 {
+.PPtextLeft h4,
+.char h4 {
   color: var(--color-navy);
   font-weight: 800;
   font-size: 1.1rem;
@@ -375,3 +376,38 @@ h2.PPname {
     background: rgb(102, 32, 32);
   }
 */
+
+ol {
+  list-style: none;
+}
+.circle {
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 1px solid var(--color-navy);
+  border-radius: 50%;
+}
+
+.char {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: space-between;
+}
+
+.char1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.char2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 0.5rem;
+}
+
+.red {
+  background-color: var(--color-accent-red);
+}
