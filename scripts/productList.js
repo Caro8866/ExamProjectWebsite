@@ -33,9 +33,6 @@ function displayData(wines) {
     clone
       .querySelector(".viewBtn")
       .setAttribute("href", `productPage.html?_id=${wine.id}`);
-    // clone.querySelector(".productImage").src =
-    // wine. ${wp:featuredmedia
-    //   .[0].media_details.sizes.medium.source_url;
     // GRAB PARENT
     const parent = document.querySelector(".products_grid");
 
