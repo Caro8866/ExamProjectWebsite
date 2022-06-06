@@ -38,7 +38,7 @@ p {
 h3 {
   font-family: var(--font-primary);
   color: var(--color-accent-red);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .PPavailability,
 .PPyear {
@@ -61,6 +61,11 @@ h3 {
 .quantity_selector,
 #PPadd {
   border: 1.5px solid var(--color-navy);
+}
+.quantity_selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .PPprice {
   font-size: 1.5rem;
@@ -102,13 +107,17 @@ h2.PPname {
 }
 
 /** desktop view: Product top and bottom sections**/
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 601px) {
   .PPproduct {
     display: grid;
-    grid-template-columns: 15% 30% 40% 15%;
+    grid-template-columns: 40% 60%;
+    grid-column: 2;
+  }
+  .PPquantity {
+    gap: 1rem;
   }
   .PPproductimg {
-    grid-column: 2/3;
+    grid-column: 1;
     border-top: 2px solid var(--color-navy);
     border-left: 2px solid var(--color-navy);
     border-right: 2px dashed var(--color-navy);
@@ -120,17 +129,26 @@ h2.PPname {
     border-right: 2px solid var(--color-navy);
   }
   .PPtextLeft {
-    grid-column: 2/3;
+    grid-column: 1;
     grid-row: 2/3;
     border-left: 2px solid var(--color-navy);
     border-right: 2px dashed var(--color-navy);
   }
   .PPchart {
-    grid-column: 3/4;
+    grid-column: 2;
     grid-row: 2/3;
     border-right: 2px solid var(--color-navy);
+    padding-left: 1rem;
+  }
+  #PPadd {
+    padding: 0rem 1.3rem;
+  }
+  .breadcrumb_menu {
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
   }
 }
+
 /** Related products **/
 .relatedCard {
   border: 3px solid var(--color-navy);
@@ -206,7 +224,7 @@ h2.PPname {
 @media only screen and (min-width: 600px) {
   .PPrelated {
     display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
   }
   .relatedCard {
@@ -216,16 +234,19 @@ h2.PPname {
   }
   .relatedWrapper {
     display: grid;
-    grid-column: 2/5;
-    grid-gap: 1rem;
+    grid-column: 1/4;
   }
   .PPrelated h3 {
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 0;
-    grid-column: 2 / span 3;
+    grid-column: 1/3;
     border: none;
     position: relative;
+    text-align: left;
+  }
+  .PP h1 {
+    border-bottom: 3px solid var(--color-navy);
   }
 }
 /*slideshow of related products*/
@@ -242,6 +263,7 @@ h2.PPname {
 .PPrelated {
   position: relative;
   overflow: hidden;
+  grid-column: 2;
 }
 .pre-btn,
 .nxt-btn {
@@ -266,10 +288,12 @@ h2.PPname {
 }
 .pre-btn {
   left: 0;
+  top: 10%;
 }
 
 .nxt-btn {
   right: 0;
+  top: 10%;
 }
 .pre-btn:hover,
 .nxt-btn:hover {
@@ -286,6 +310,8 @@ h2.PPname {
 
 .breadcrumb_menu {
   padding-left: 1rem;
+  grid-column: 2;
+  grid-row: 1;
 }
 .breadcrumbNav {
   margin-bottom: 1rem;
@@ -311,6 +337,8 @@ h2.PPname {
 #headerSection {
   color: var(--color-navy);
   border-top: 3px solid var(--color-navy);
+
+  grid-column: 2;
 }
 #headerSection h1 {
   text-align: center;

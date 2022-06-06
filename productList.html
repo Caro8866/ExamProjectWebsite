@@ -82,24 +82,24 @@
         <div class="topBar">
           <div class="sortByDropDown">Sort by</div>
         </div>
-        <div id="products">
+        <div class="products_grid">
+          <!-- template parent-->
           <template id="productCardTemplate" class="productCard">
-            <div class="topProductSec">
+            <!-- container for template elements (cards)-->
+            <div class="template_card">
               <img
                 src="Assets/bottle.png"
                 alt="Wine Bottle Image"
                 class="productImage"
               />
               <h3 class="productName">joy sauvignon</h3>
-            </div>
 
-            <div class="priceSec">
-              <p class="productPrice">DKK 120;-</p>
-            </div>
+              <p class="productPrice priceSec">DKK 120;-</p>
 
-            <div class="productActions">
-              <a class="viewBtn btn" href="productPage.html">view</a>
-              <a class="buyBtn btn" href="">buy</a>
+              <div class="productActions">
+                <a class="viewBtn btn" href="productPage.html">view</a>
+                <a class="buyBtn btn" href="">buy</a>
+              </div>
             </div>
           </template>
         </div>
