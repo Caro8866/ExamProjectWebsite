@@ -719,6 +719,7 @@ input.sub:hover {
   .contentWrapper {
     grid-template-columns: 15% 70% 15%;
   }
+
   .formstyle-f1 {
     display: grid;
     gap: 4rem;

@@ -109,8 +109,8 @@ h2.PPname {
 /** desktop view: Product top and bottom sections**/
 @media only screen and (min-width: 601px) {
   .PPproduct {
-    display: grid;
-    grid-template-columns: 40% 60%;
+    /* display: grid;
+    grid-template-columns: 40% 60%; */
     grid-column: 2;
   }
   .PPquantity {
@@ -148,6 +148,34 @@ h2.PPname {
   .breadcrumb_menu {
     border: 3px solid var(--color-navy);
     border-bottom: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .PPproduct {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column: 2;
+  }
+  .PPproductimg {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 3px dashed var(--color-navy);
+  }
+  .PPtextRight {
+    grid-column: 2;
+    grid-row: 1;
+    border-left: none;
+  }
+  .PPtextLeft {
+    grid-column: 1;
+    grid-row: 2;
+    border-right: 3px dashed var(--color-navy);
+    border-bottom: 3px solid var(--color-navy);
+  }
+  .PPchart {
+    grid-column: 2;
+    grid-row: 2;
+    border-left: none;
   }
 }
 
@@ -301,6 +329,11 @@ h2.PPname {
 .nxt-btn:hover {
   color: var(--color-navy);
 }
+@media only screen and (min-width: 1200px) {
+  .PPquantity {
+    justify-content: start;
+  }
+}
 @media only screen and (min-width: 1300px) {
   .pre-btn,
   .nxt-btn {
@@ -377,3 +410,8 @@ h2.PPname {
     background: rgb(102, 32, 32);
   }
 */
+@media only screen and (min-width: 350px) {
+  #PPadd {
+    padding: 0.5rem 3rem;
+  }
+}
