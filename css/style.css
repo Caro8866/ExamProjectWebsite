@@ -15,7 +15,7 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* body has to have a height for the sticky menu to work with the overflow */
   font-family: var(--font-secondary);
   background-color: #f9f3ed;
   position: relative;
@@ -42,7 +42,7 @@ li {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 .contentWrapper {
   margin: 0;
@@ -87,7 +87,7 @@ img {
 /**************----- LANDING PAGE -----****************/
 
 .HeroTop {
-  height: 65vh;
+  height: 90vh;
   background-image: url(../Assets/bistrofront.jpg);
   background-position: center;
   display: flex;
@@ -117,6 +117,8 @@ img {
 #Contact {
   grid-row: 5;
   grid-column: 2;
+
+  border-bottom: 3px solid var(--color-navy);
 }
 
 /***************** navigation ****************/
@@ -158,7 +160,7 @@ img {
 #sticky_nav_menu {
   position: sticky;
   top: 13rem;
-  grid-row: 1;
+  grid-row: 1/4;
   grid-column: 1;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
@@ -167,6 +169,12 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+.list_menu_sticky li {
+  width: 100%;
+}
+.submenu {
+  display: none;
 }
 /* .list_menu_sticky li:hover {
   transform: scale(1.2);
@@ -192,12 +200,7 @@ img {
 .line3 {
   transition: transform 400ms ease-in-out;
 }
-/* .submenu {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  z-index: 2;
-} */
+
 .menu_name {
   font-weight: 700;
   font-size: 1.2rem;
@@ -297,15 +300,7 @@ li {
   .list_menu_burger li:last-child {
     border-bottom: none;
   }
-  /* .first_menu_item:hover .submenu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    z-index: 2;
-  } */
-  /* .submenu {
-    padding-top: 0.9rem;
-  } */
+
   .flag_dk {
     background-image: url(../Assets/circle-flags_dkcircle_flag_dk.svg);
     background-size: 1.8rem;
@@ -422,15 +417,16 @@ iframe {
 .footer_p {
   font-weight: 700;
 }
-.footercontainer2 {
+/* .footercontainer2 {
   text-align: center;
-}
+} */
 
 .fc2 {
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  text-align: center;
 }
 
 .fc21 {
@@ -543,8 +539,9 @@ textarea {
 .sub {
   padding: 0.3rem;
   margin: 2rem 0;
+  cursor: pointer;
 }
-input.sub :hover {
+input.sub:hover {
   background-color: var(--color-navy);
   color: var(--color-primary-offwhite);
 }
@@ -572,36 +569,61 @@ input.sub :hover {
 /* Media query form, footer wine display*/
 
 @media only screen and (min-width: 601px) {
-  .footercontainer {
+  li.submenu_access:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    z-index: 2;
+    margin: 0.6rem;
+  }
+  .PP h1 {
+    border: 3px solid var(--color-navy);
+    border-top: none;
+  }
+  /* #headerSection {
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
+  } */
+
+  /* .footercontainer {
     border-left: 3px solid var(--color-navy);
     border-right: 3px solid var(--color-navy);
-  }
+    margin: 1rem 8rem 0 8rem;
+  } */
   .footercontainer1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    grid-column: 2;
+    border: 3px solid var(--color-navy);
+    border-bottom: none;
+    padding-top: 1.5rem;
   }
 
   .footercontainer2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 3rem;
+    column-gap: 4rem;
   }
   .fc2 {
     row-gap: 10px;
+    text-align: left;
   }
 
   .fc24 {
     justify-content: space-between;
+    gap: 1rem;
   }
   .footercontainer3 {
     display: inline;
-    padding: 2rem 2rem;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
   }
 
   .footercontainer3 a,
@@ -620,6 +642,9 @@ input.sub :hover {
 
   .fc213 {
     align-items: flex-start;
+  }
+  .fc21 {
+    justify-content: left;
   }
 
   /* Form */
@@ -667,6 +692,9 @@ input.sub :hover {
   .containerform {
     border: none;
   }
+  #Contact {
+    border-bottom: 3px solid var(--color-navy);
+  }
 }
 
 /*** media queries for main structure ***/
@@ -680,6 +708,7 @@ input.sub :hover {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
+    margin-top: 2rem;
   }
 }
 

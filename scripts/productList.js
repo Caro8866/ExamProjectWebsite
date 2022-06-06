@@ -35,7 +35,7 @@ function displayData(wines) {
       .setAttribute("href", `productPage.html?_id=${wine.id}`);
 
     // GRAB PARENT
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".products_grid");
 
     // APPEND PARENT
     parent.appendChild(clone);

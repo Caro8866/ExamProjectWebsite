@@ -42,4 +42,7 @@ function showWine(wine) {
 
   // notes
   document.querySelector(".PPnotes").textContent = wine.notes;
+
+  // recommended with
+  document.querySelector(".PPrecommended").textContent = wine.recommended_with;
 }
