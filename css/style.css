@@ -85,21 +85,41 @@ img {
 }
 
 /**************----- LANDING PAGE -----****************/
+/*video on the homepage*/
+video{
+object-fit: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+top:0;
+left:0;
+opacity: 90%;
+}
 
 .HeroTop {
+ height: 90vh;
+ position: relative;
+ overflow: hidden;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  /* aspect-ratio: 16/9; */
+}
+/*.HeroTop {
   height: 90vh;
-  background-image: url(../Assets/bistrofront.jpg);
+  background-image: url(../Assets/facade.jpg);
+  background-size:cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* aspect-ratio: 16/9; */
-}
-
+}*/
 .HeroTop h1 {
   font-size: 3rem;
   color: var(--color-white);
   font-weight: 700;
+  z-index: 1;
 }
 
 #WineCategories {
