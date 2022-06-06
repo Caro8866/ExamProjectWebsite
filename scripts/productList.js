@@ -10,7 +10,7 @@ function init(event) {
 // FETCH DATA
 async function loadWines() {
   const response = await fetch(
-    "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine?_embed"
+    "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine?_embed&per_page=20"
   );
   const data = await response.json();
   displayData(data);
