@@ -709,21 +709,43 @@ input.sub :hover {
   }
 }
 
+.owl-container {
+  padding: 5rem 0;
+}
+
 .cws {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
   align-items: center;
 }
 
+/* .textwine {
+  transform: rotateX(90deg);
+}
+ */
 /* Carousel */
 
 /* .item {
   background-color: pink;
 } */
 
-.cws1 {
-  height: 30rem;
+.owl-nav {
+  background-color: pink;
+}
+
+.owl-prev {
+  color: #90191f;
+  position: absolute;
+  top: 50%;
+  right: 95%;
+}
+
+.owl-next {
+  background-color: pink;
+  position: absolute;
+  top: 50%;
+  left: 95%;
 }
