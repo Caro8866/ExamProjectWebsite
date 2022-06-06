@@ -110,6 +110,43 @@ img {
   grid-row: 3;
   grid-column: 2;
 }
+
+/* Events Section */
+#Events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.event {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(226, 88, 37, 0.2);
+  padding: 2rem;
+  color: var(--color-navy);
+  border: solid 3px var(--color-accent-red);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.event01 {
+  background-image: url(../Assets/RedWineEvent.png);
+  filter: opacity(0.8);
+}
+
+.event02 {
+  background-image: url(../Assets/WinePairingEvent.png);
+}
+
+.transparentRectangle {
+  background-color: rgba(209, 36, 45, 0.6);
+  width: auto;
+  height: 100%;
+  padding: 2rem;
+  border: var(--color-accent-red) 2px solid;
+}
+
 #newWine {
   grid-row: 4;
   grid-column: 2;
@@ -719,6 +756,7 @@ input.sub:hover {
   .contentWrapper {
     grid-template-columns: 15% 70% 15%;
   }
+
   .formstyle-f1 {
     display: grid;
     gap: 4rem;
@@ -757,6 +795,9 @@ input.sub:hover {
   /* align-content: center; */
   align-items: center;
 }
+.textwine {
+  padding-top: 1rem;
+}
 
 /* .textwine {
   transform: rotateX(90deg);
@@ -784,4 +825,28 @@ input.sub:hover {
   position: absolute;
   top: 50%;
   left: 95%;
+}
+
+@media only screen and (min-width: 900) {
+  .PPproduct {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column: 2;
+  }
+  .PPproductimg {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .PPtextRight {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .PPtextLeft {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .PPchart {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
