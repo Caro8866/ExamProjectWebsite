@@ -121,7 +121,7 @@ h2.PPname {
     grid-column: 1/3;
     border: 3px solid var(--color-navy);
     border-bottom: none;
-    background-image: url(/Assets/background-try.png);
+    background-image: url(../Assets/background-try.png);
     background-size: cover;
   }
   .PPtextRight {
