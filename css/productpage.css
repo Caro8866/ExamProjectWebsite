@@ -29,7 +29,7 @@ p {
   text-align: center;
   border-bottom: 3px solid var(--color-navy);
   padding: 1rem;
-  background-image: url(/Assets/background-try.png);
+  background-image: url(../Assets/background-try.png);
   background-size: cover;
 }
 .PPproductimg img {
