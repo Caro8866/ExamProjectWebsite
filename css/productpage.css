@@ -34,6 +34,7 @@ p {
 }
 .PPproductimg img {
   object-fit: cover;
+  height: 30vh;
 }
 .PP h2,
 h3 {
@@ -123,6 +124,9 @@ h2.PPname {
     border-bottom: none;
     background-image: url(../Assets/background-try.png);
     background-size: cover;
+  }
+  .PPproductimg img {
+    height: auto;
   }
   .PPtextRight {
     border: 3px solid var(--color-navy);

@@ -335,6 +335,7 @@ li {
     border: 3px solid var(--color-navy);
     text-align: center;
     transition: transform 1s;
+    z-index: 100;
   }
   .list_menu_active {
     transform: translateX(-80vw);
